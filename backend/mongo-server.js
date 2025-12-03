@@ -11,9 +11,9 @@
   app.use(express.static(__dirname));
 
   // Connect to MongoDB
-  //192.168.175.126
-  //172.24.240.1
-  mongoose.connect('mongodb://172.24.243.0:27017/library')
+  host = "localhost"
+  database = "library"
+  mongoose.connect('mongodb://'+ host +':27017/' + database)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 

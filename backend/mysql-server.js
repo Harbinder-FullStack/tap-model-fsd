@@ -3,13 +3,13 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3001;
-
+host = "localhost"
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(__dirname));
 
 const db = mysql.createConnection({
-  host: '172.24.243.0',
+  host: host,
   user: 'root',
   password: '',
   database: 'library'

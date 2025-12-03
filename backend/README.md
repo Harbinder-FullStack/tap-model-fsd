@@ -104,7 +104,7 @@ npm install mysql2 mongodb
 ## 🟦 MySQL Server (`mysql_server.js`)
 
 ``` js
-host: '172.24.240.1',
+host: 'localhost',
 user: 'root',
 password: '',
 database: 'library'
@@ -113,7 +113,7 @@ database: 'library'
 Test:
 
 ``` bash
-mysql -h 172.24.240.1 -u root -p
+mysql -h localhost -u root -p
 ```
 
 ------------------------------------------------------------------------
@@ -121,13 +121,13 @@ mysql -h 172.24.240.1 -u root -p
 ## 🟩 MongoDB Server (`mongo_server.js`)
 
 ``` js
-const url = "mongodb://172.24.240.1:27017/library";
+const url = "mongodb://localhost:27017/library";
 ```
 
 Test:
 
 ``` bash
-mongosh "mongodb://172.24.240.1:27017/library"
+mongosh "mongodb://localhost:27017/library"
 ```
 
 ------------------------------------------------------------------------
@@ -161,6 +161,6 @@ Use Postman, Browser, Curl:
 
 ✔ Mongo Server → **3000**\
 ✔ MySQL Server → **3001**\
-✔ Both connect using host **172.24.240.1**
+✔ Both connect using host **localhost**
 
 ------------------------------------------------------------------------
